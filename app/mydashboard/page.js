@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
 
-export default function Dashboard() {
+export default function MyDashboard() {
   const [events, setEvents] = useState([])
   const [rsvpSummary, setRsvpSummary] = useState([])
 
@@ -50,7 +50,7 @@ export default function Dashboard() {
 
   return (
     <div className="p-10 max-w-4xl mx-auto bg-white rounded-2xl shadow">
-      <h1 className="text-2xl font-bold mb-6">📊 Dashboard</h1>
+      <h1 className="text-2xl font-bold mb-6">📊 Admin Dashboard</h1>
 
       {rsvpSummary.length === 0 ? (
         <p>No events or RSVPs yet.</p>
